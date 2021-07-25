@@ -1,7 +1,9 @@
 var socket = io();
 
+
 socket.on("connect", () => {
     id = socket.id;
+    document.getElementById("statusBar").innerText = "CONNECTED";
     console.log(id);
 });
 
