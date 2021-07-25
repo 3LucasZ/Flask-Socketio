@@ -38,14 +38,19 @@ def disconnect():
 def handle_message(data):
     sid = request.sid
     player = players.find_player(request.sid)
-    if (data) == 'forward':
-        print(sid, " forward")
-        player.forward()
+    if (data) == 'left':
+        print(sid, ' left')
+        player.left()
     elif (data) == 'right':
-        print(sid, " right")
+        print(sid, ' right')
         player.right()
+    elif (data) == 'forward':
+        print(sid, ' forward')
+        player.forward()
+    elif (data) == 'back':
+        print(sid, ' back')
+        player.back()
     send(players.to_dict(), json=True, broadcast=True)
-
 
 
 if __name__ == '__main__':

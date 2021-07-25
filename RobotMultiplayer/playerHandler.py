@@ -13,11 +13,16 @@ class Player:
         self.rotation = 0
     def __str__(self):
         return self.id + " x: " + str(self.x) + " y: " + str(self.y)
+    def left(self):
+        self.rotation -= 5
     def right(self):
         self.rotation += 5
     def forward(self):
         self.x += (10 * math.cos(toRadians(90-self.rotation)))
         self.y += (-10 * math.sin(toRadians(90-self.rotation)))
+    def back(self):
+        self.x -= (10 * math.cos(toRadians(90-self.rotation)))
+        self.y -= (-10 * math.sin(toRadians(90-self.rotation)))
     def to_dict(self):
         return {
             "x": self.x,
