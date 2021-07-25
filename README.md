@@ -1,5 +1,5 @@
 # MultiplayerGames
-This repository has a few realtime, multiplayer games!
+This repository has a few (2) realtime, multiplayer games!
 
 Server: 
 - Flask, websocket connections
@@ -14,7 +14,8 @@ Setup:
 - install the libraries from requirements.txt (pip3 install -r requirements.txt)
 - each game in this repository is in a separate folder, find the game to play, and the folder will container a server.py
 - run server.py
-- If no errors show up and nothing is returned when server.py is ran, go to a web browser and run: YOUR_IP_ADDRESS:5000
+- If no errors show up and nothing is returned when server.py is ran, set up is complete
+- On devices(Preferably large) (connected under the wifi in which the server is running) go to a web browser and run: YOUR_IP_ADDRESS:5000
 - Have fun!
 
 Extra Notes:

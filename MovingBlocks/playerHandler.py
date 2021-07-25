@@ -3,18 +3,18 @@ import json
 class Player:
     def __init__(self, id):
         self.id = id
-        self.x = 50
-        self.y = 50
+        self.x = 0
+        self.y = 0
     def __str__(self):
         return self.id + " x: " + str(self.x) + " y: " + str(self.y)
     def left(self):
-        self.x -= 1
+        self.x -= 10
     def forward(self):
-        self.y += 1
+        self.y -= 10
     def right(self):
-        self.x += 1
+        self.x += 10
     def back(self):
-        self.y -= 1
+        self.y += 10
     def to_dict(self):
         return {
             "x": self.x,

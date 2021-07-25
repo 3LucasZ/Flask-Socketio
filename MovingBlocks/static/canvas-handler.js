@@ -6,6 +6,6 @@ socket.on("json", data => {
     for (let player in data.players) {
         newX = data.players[player].x;
         newY = data.players[player].y;
-        ctx.fillRect(10 * newX, 10 * newY, 50, 50);
+        ctx.fillRect(newX, newY, 50, 50);
     }
 });
