@@ -1,5 +1,5 @@
-# Flask-Socketio
-Realtime, Multiplayer games!
+# MultiplayerGames
+This repository has a few realtime, multiplayer games!
 Server: 
 - Flask, websocket connections
 Client:
